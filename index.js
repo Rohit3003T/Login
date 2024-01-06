@@ -41,7 +41,7 @@ function pass() {
   if (password.value === confpassword.value) {
     strpssword();
     // Redirect only if password conditions are met
-    window.location.href = './login.html';
+    window.location.href = './index.html';
   } else {
     alert("Passwords do not match.");
   }

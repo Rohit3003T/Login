@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login</title>
+    <title>signin</title>
+    <link rel="stylesheet" href="./style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="./login.css">
 </head>
 <body>
-     <div class="outbox">
+    <div class="outbox">
     <!-- <body class="d-flex align-items-center py-4 bg-body-tertiary" cz-shortcut-listen="true"> -->
-       
+         <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
           <symbol id="check2" viewBox="0 0 16 16">
             <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"></path>
           </symbol>
@@ -28,7 +28,7 @@
         </svg>
     
         <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
-          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)" fdprocessedid="k6gv3">
+          <button class="btn btn-bd-primary py-2 dropdown-toggle d-flex align-items-center" id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (dark)" fdprocessedid="ry9hz2">
             <svg class="bi my-1 theme-icon-active" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
             <span class="visually-hidden" id="bd-theme-text">Toggle theme</span>
           </button>
@@ -60,20 +60,22 @@
         
     <main class="form-signin w-100 m-auto">
       <form>
-        <!-- <img class="mb-4" src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57"> -->
-        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+       
+        <h1 class="h3 mb-3 fw-normal">Create account </h1>
     
         <div class="form-floating">
-          <input type="email" class="form-control inputEmail" id="floatingInput" placeholder="name@example.com" fdprocessedid="wua9w">
+          <input type="email" class="form-control emailInput" id="floatingInput" placeholder="name@example.com" fdprocessedid="zij4l9">
           <label for="floatingInput">Email address</label>
         </div>
         <div class="form-floating">
-          <input type="password" class="form-control inputPassword" id="floatingPassword" placeholder="Password" fdprocessedid="t39wck">
+          <input type="password" class="form-control password" id="floatingPassword" placeholder="Password" fdprocessedid="mhbdw">
           <label for="floatingPassword">Password</label>
         </div>
-        <div class="createAcc">
-            <a href="./index.html"> Don't have acccount ,create account</a>
-        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control confpassword"  placeholder="Password" fdprocessedid="mhbdw">
+            <label for="floatingPassword"> confirm Password</label>
+          </div>
+          <p class="text1"> * password must contain mor then 6 terms </p>
     
         <div class="form-check text-start my-3">
           <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
@@ -81,24 +83,24 @@
             Remember me
           </label>
         </div>
-        <button class="btn btn-primary w-100 py-2 signIn" type="button" fdprocessedid="o6f30p">Sign in</button>
-        <!-- <p class="mt-5 mb-3 text-body-secondary">© 2017–2023</p> -->
+        <button class="btn btn-primary w-100  createAC" type="submit" fdprocessedid="mnc5k5">Create</button>
+        <p class="mt-5 mb-3 text-body-secondary year">© 2024</p>
       </form>
     </main>
     <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     
+    
+        
+    
+    
 </div>
-   
-  
-
-
 
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> 
+    <script src="./index.js">
 
-    <script src="./index.js"></script>
-    <script src="./login.js"></script>
+    </script>
 </body>
 </html>
